@@ -1,0 +1,118 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "84f86254dc31",
+  "session_id": "019f5c7a-c8ca-7538-806b-c33d02e481b1",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-13T17:25:50.92017174Z",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "save_step_count": 4,
+  "files_touched": [
+    ".gitignore",
+    "README.md",
+    "opencode/README.md",
+    "pi/.gitignore",
+    "pi/LICENSE",
+    "pi/README.md",
+    "pi/config.ts",
+    "pi/image-gen.ts",
+    "pi/index.ts",
+    "pi/package-lock.json",
+    "pi/package.json"
+  ],
+  "agent": "Pi",
+  "model": "mimo-v2.5-free",
+  "turn_id": "50e05c52fc45",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 3177,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 13952,
+    "output_tokens": 1029,
+    "api_call_count": 7
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "prompt-skill-pi-imify-2026-07-13T17:17:34.026303089Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "imify"
+      },
+      "source": {
+        "agent": "pi",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "f4dfb1d4be28",
+      "timestamp": "2026-07-13T17:17:34.026303089Z",
+      "native": {
+        "command": "/imify"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/imify",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-13T17:25:50.906893242Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 1,
+    "human_removed": 27,
+    "total_committed": 0,
+    "total_lines_changed": 28,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 889,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 9,
+        ".pi/settings.json": 5,
+        "README.md": 33,
+        "opencode/README.md": 22,
+        "pi/.gitignore": 9,
+        "pi/LICENSE": 21,
+        "pi/README.md": 120,
+        "pi/config.ts": 60,
+        "pi/image-gen.ts": 127,
+        "pi/index.ts": 158,
+        "pi/package-lock.json": 279,
+        "pi/package.json": 46
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 889,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 889,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 889,
+      "agent_lines_removed": 0
+    }
+  ]
+}
