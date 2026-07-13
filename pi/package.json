@@ -1,0 +1,46 @@
+{
+  "name": "imgify-pi",
+  "version": "0.1.0",
+  "description": "pi extension: convert a written prompt into an image and send it to the chat model",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-plugin",
+    "image",
+    "text-to-image",
+    "vision"
+  ],
+  "license": "MIT",
+  "author": "MandavkarPranjal programmer.pranjal@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandavkarpranjal/imgify.git"
+  },
+  "homepage": "https://github.com/mandavkarpranjal/imgify#readme",
+  "bugs": "https://github.com/mandavkarpranjal/imgify/issues",
+  "files": [
+    "index.ts",
+    "image-gen.ts",
+    "config.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.86"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
