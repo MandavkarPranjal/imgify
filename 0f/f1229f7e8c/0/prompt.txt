@@ -1,0 +1,5 @@
+create imgify plugin for opencode
+
+---
+
+can i use bun instead of npm?
