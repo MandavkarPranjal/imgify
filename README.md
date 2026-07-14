@@ -8,7 +8,7 @@ This repo holds separate plugin implementations per tool:
 | Folder | Status | Purpose |
 |--------|--------|---------|
 | [`pi/`](./pi) | **implemented** | pi coding-agent extension |
-| [`opencode/`](./opencode) | placeholder | opencode plugin (not built yet) |
+| [`opencode/`](./opencode) | **implementing** | opencode plugin |
 
 ## How it works
 
@@ -23,6 +23,8 @@ Both plugins read the same `IMAGIFY_*` environment variables. See
 [`pi/README.md`](./pi/README.md) for the full list.
 
 ## Install
+
+### pi
 
 The pi plugin is published as **`imgify-pi`** on npm. Install it with:
 

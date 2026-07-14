@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "imgify-opencode",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenCode plugin that converts text prompts into images and sends them to vision-capable models",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "bun run clean && tsup && tsc --emitDeclarationOnly",
+    "dev": "opencode plugin dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "imgify",
+    "image",
+    "vision",
+    "text-to-image"
+  ],
+  "author": "MandavkarPranjal <programmer.pranjal@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.4.3"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.62"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.17.19",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.2",
+    "zod": "^4.1.8"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
